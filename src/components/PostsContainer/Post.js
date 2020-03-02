@@ -11,7 +11,11 @@ const Post = props => {
   // set up state for the likes
   let [likes, setLikes] = useState(props.post.likes);
   let addLike = () => {
-    setLikes(likes + 1);
+    if (likes === props.post.likes ) {
+      setLikes(likes + 1);
+    } else if (likes === (props.post.likes + 1)) {
+      setLikes(likes - 1);
+    }
   }
 
   return (
