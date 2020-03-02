@@ -1,7 +1,7 @@
 // You do not need to change any code in this file
 import React from "react";
 import "./SearchBar.css";
-import logo from "./insta.png";
+import logo from "../../assets/insta.png";
 
 const SearchBar = () => {
   return (
